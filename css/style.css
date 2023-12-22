@@ -1,0 +1,60 @@
+main{
+    background-color: #f7ecde;
+}
+
+
+.container >h1{
+    text-align: center;
+    z-index: 1;
+    font-family: "Pacifico", cursive;
+    font-size: 50px;
+    font-weight: 900;
+    width: fit-content;
+}
+
+
+  h1::before{
+    content: "";
+    position: absolute;
+    bottom: 11px;
+    left: 0px;
+    width: 100%;
+    background-color: #fec260;
+    height: 25%;
+    z-index: -1;
+    transition: height 0.5s;
+}
+
+h1:hover::before{
+    height: 50%;
+}
+.main-cont h2{
+    
+    font-family: 'Righteous', sans-cursive;
+    font-size: 25px;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+}
+
+.main-cont{
+    border-width: 2px 0 2px 0  ;
+    border-style: dotted;
+}
+
+.layout{
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.layout .content{
+    
+   width: 40%;
+   height: 25vh;
+}
+
+
+::selection {
+    background-color: #fec260;
+    color: #352e28;
+}
+

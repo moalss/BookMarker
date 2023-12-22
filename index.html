@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BookMark</title>
+    <!-- Icon link-->
+    <link rel="icon" href="bookmark.png">
+    <!-- Font link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- my style sheet link-->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Bootstrap link>-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  <body>
+    <!--Start Main section-->
+    <main class="py-5 position-relative  ">
+      <section class="container vh-100    ">
+        
+          <h1 class="position-relative m-auto">BookMarker</h1>
+           <!------Start Form ------->
+        <section class="main-cont  py-2 my-4 d-flex flex-column justify-content-center align-items-center ">
+         <div class="title-cont  my-4 ">
+           <h2 ><i class="fa-solid fa-bookmark"></i> Bookmark your favorite sites <i class="fa-solid fa-bookmark"></i> </h2>
+         </div>
+
+          <div class="input-cont mt-4 w-100">
+            <label class="my-2"  for="siteName"><i class="fa-solid fa-book-bookmark"></i> Site Name </label>
+            <input type="text" name="siteName" id="siteName" class="form-control" placeholder="Bookmark Name"><span class="checkName"></span>
+          </div>
+          <div class="input-cont mt-4 w-100">
+            <label  class="my-2" for="siteUrl"><i class="fa-solid fa-link"></i> Site URL </label>
+            <input type="text" name="siteUrl" id="siteUrl" class="form-control" placeholder="Website URL">
+            <span class="checkUrl"></span>
+          </div>
+          <button class="btn btn-danger my-4 px-5 submitBtn">Submit</button>
+          <button class="btn btn-danger my-4 px-5 clearBtn disabled">Clear All</button>
+         <!-- <span class="clearBtnError">The Table is Empty</span> -->
+        </section>
+        <!------End Form ------->
+
+        <!------Start Table ------->
+        <table class="table ">
+          <thead>
+            <tr>
+              <th>Index</th>
+              <th>Website Name</th>
+              <th>Visit</th>
+              <th>Delete</th>
+
+            </tr>
+          </thead>
+          <tbody>
+
+          </tbody>
+        </table>
+        <!------Ens Table ------->
+      </div>
+      <!------Start alert window ------->
+      <section class=" alertWindow d-none layout d-flex justify-content-center align-items-center  position-fixed top-0 start-0 end-0 bottom-0">
+        <section class="content  bg-body p-3 border rounded-1 d-flex flex-column justify-content-around " >
+          <div class="icons d-flex justify-content-between ">
+            <div class="circles">
+              <i class="fa-solid fa-circle text-danger fs-4"></i>
+              <i class="fa-solid fa-circle text-warning fs-4"></i>
+              <i class="fa-solid fa-circle text-success fs-4"></i>
+
+            </div>
+            <i class="fa-regular fa-circle-xmark fs-4"></i>
+          </div>
+          <div class="text-cont  ">
+
+            <p class="fs-5 my-2">Site Name or Url is not valid, Please follow the rules below :</p>
+            <ul class="list-unstyled">
+              <li><i class="fa-regular fa-circle-right text-danger"></i> Site name must contain at least 3 characters</li>
+              <li><i class="fa-regular fa-circle-right text-danger"></i> Site URL must be a valid one</li>
+            </ul>
+          </div>
+            
+          </section>
+        </div>
+
+      </section>
+      <!------End Error window ------->
+    </main>
+    <!--End Main section-->
+
+    <!--Main JS-->
+<script src="js/main.js"></script>
+    <!--Bootstrap JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
